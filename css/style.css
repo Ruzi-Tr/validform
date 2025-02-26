@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+#sub {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    margin: 3px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#container {
+    margin: 20px 360px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+input {
+    width: 250px;
+    margin: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+input:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}

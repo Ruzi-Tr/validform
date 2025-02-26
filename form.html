@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+
+<body>
+    <h1>Form Validation</h1>
+    <div id="container">
+        <form id="registrationForm">
+            <div id="nameform">
+                <label for="firstName">First Name</label><br>
+                <input list="firstNameList" placeholder="First name" id="firstName" name="firstNameList">
+                <datalist id="firstNameList">
+                    <option value="Armen"></option>
+                    <option value="Artak"></option>
+                    <option value="Aren"></option>
+                    <option value="Kate"></option>
+                    <option value="Ann"></option>
+                    <option value="Anahit"></option>
+                    <option value="Bob"></option>
+                    <option value="James"></option>
+                    <option value="John"></option>
+                    <option value="Paul"></option>
+                    <option value="Brian"></option>
+                    <option value="Jason"></option>
+                </datalist>
+                <span class="error" id="firstNameError"></span><br>
+
+                <label for="lastName">Last Name</label><br>
+                <input list="lastNameList" placeholder="Last name" id="lastName" name="lastNameList">
+                <datalist id="lastNameList">
+                    <option value="Smith"></option>
+                    <option value="Johnson"></option>
+                    <option value="Williams"></option>
+                    <option value="Brown"></option>
+                    <option value="Jones"></option>
+                    <option value="Miller"></option>
+                    <option value="Lopez"></option>
+                    <option value="Wilson"></option>
+                    <option value="Taylor"></option>
+                    <option value="Moore"></option>
+                </datalist>
+                <span class="error" id="lastNameError"></span>
+            </div>
+
+            <div id="emailform">
+                <label for="email">Contact Email</label><br>
+                <input type="text" placeholder="Email" id="email">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div id="phnumber">
+                <label for="phone">Phone Number</label><br>
+                <input type="text" placeholder="Phone number" id="phone">
+                <span class="error" id="phoneNumberError"></span>
+            </div>
+
+            <div id="checkbox">
+                <p>Payment Information</p>
+                <label for="card">Pay by card</label>
+                <input type="radio" id="card" name="paymentOption">
+                <span class="error" id="paymentError"></span><br>
+
+                <label for="ACH">Pay by ACH</label>
+                <input type="radio" id="ACH" name="paymentOption">
+            </div>
+
+            <button id="sub" type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
